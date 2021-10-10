@@ -1,0 +1,300 @@
+/* Css file for whole webpage */
+
+/* specifying font type , font size and box-sizing for all elemenets across all the pages */
+*{	font-size:100%;
+	font-family:Arial, "Helvetica Neue" , Helvetica, sans-serif;
+	box-sizing:border-box;
+	margin:0px;
+}
+
+/*setting color for body of all pages*/
+body{ background-color: #999999
+
+
+}
+
+/* setting background color for header section */
+#header{ 
+	background-color:#252525d5;
+	clear:both;
+	width:100%;
+	max-height: 250px;
+	
+	
+}
+/* setting position for logo across all pages */
+#logo {margin-left:25px;
+	height:150px;
+}
+
+/* applying properties on the text in navigation */
+#mainmenu{
+	font-weight: bold;
+	float: right;
+	margin-right: 7%;
+	margin-top: 7%;
+
+}
+
+
+/* specification for navigation with ul element */
+#mainmenu ul{
+	list-style-type: none;
+	
+}
+
+/* listing and font properties inside navigation */
+#mainmenu li{
+	font-size: 1.5rem;
+	float: left;
+	margin-right: 2em;	
+}
+
+/* Hyperlink specification for listing elements */
+#mainmenu li a {
+	display: block;
+	color: #e7cdb5;
+	text-align: center;
+	padding: 14px 16px; 
+	text-decoration: none;
+}
+/* specifying background properties while hovering the cursor */
+#mainmenu li a:hover{
+	background-color:greenyellow;
+	color:red;
+	
+}
+
+/* aligning text on the center of the welcomepage with the element h1 in it  */
+#welcomepage h1{
+	text-align: center;
+}
+
+
+
+/* font decoration for the text on the paragraph with the class welcome in it i.e. on the homepage */
+p.welcome{ font-size:xx-large;
+	font-family:Courier;
+	background-color:grey;
+	margin-top:inherit;
+	font-weight:bold;
+	align-content: center;
+}
+/* specifying the content of the welcomepage */
+p.abouthome{
+	font-size:100%;
+	font-family:Courier;
+	background-color:grey;
+	margin-top:inherit;
+	font-weight:bold;
+	text-align: center;
+
+
+}
+
+
+/* positioning footer across every pages */
+footer{
+	position: relative;
+	clear:both;
+	width: 100%;
+	background-color: #252525d5;
+	padding: 5px;
+    font-weight: bold ;
+	font-size: 1rem;
+	text-align: center;
+	color: #e7cdb5;
+	
+
+}
+
+/* specifying footer characteristics for the welcome and about page*/
+#welcomepage footer, #about footer{
+	position:absolute;
+	bottom:0;
+
+}
+
+
+
+
+/* aligning text to the center on about page */
+#aboutpage {
+	width:65%;
+	text-align: center;
+	margin: 3% auto 3% auto;
+
+}
+
+/* applying properties to all the header elements with the id="pageheading" */
+#pageheading h2{
+	text-align: center;
+	margin-top:10vh;
+}
+
+
+/* specification of class authorprofile */
+.authorprofile{
+	float:left;
+	width: 25%;
+	padding: 10px 10px;
+	
+
+}
+
+/* applying properties for all the article elements */
+article{margin:auto 3% auto 3%;
+width:100%;
+}
+
+/* Disabling hyperlink and changing the background color with id and class of the pages */
+#authorlists nav .authors, #about nav .about, #report nav .report{pointer-events: none;
+    cursor: default;
+    background-color: green;
+	color: red;
+}
+
+/* formatting report page */
+#reportpage {
+	margin: 2% auto 2% auto;
+	width: 80%;
+	line-height: 2rem;
+}
+
+/* decorating the name of the author */
+.authorprofile h2{
+
+text-align: center;
+font-size: 18px;
+
+}
+/* applying properties to the author description */
+.authorprofile p{
+	text-align: center;
+
+}
+/* applying properties for the class authorimage */
+.authorimage{
+	margin: 0 auto;
+	display:block;
+	width: auto;
+	padding: 5px;
+	
+
+}
+/* specifying id with the authordetail */
+#authordetail{
+	clear:right;
+	padding: 3%;
+	width:100%;
+	display: block;
+}
+/* applying properties to the bookcontainer on artist page */
+.bookcontainer{
+	clear:both;
+	width:100%;
+	
+
+}
+/* specifying position of class bookdetails */
+.bookdetails{
+	float:left;
+	width:25%;
+	padding: 15px;
+}
+
+/* specifying book name  */
+.bookdetails h3{
+	text-align: center;
+	margin-top:5vh;
+
+}
+
+/* specification for the class authordescription */
+.autordescription{
+	display: block;
+	float: inherit;
+	padding-top: 5%;
+	width:60%;
+
+
+}
+
+/* styiling images to float on the right on the individual author page */
+#authorpic{
+	float: right;
+	padding-right:10px;
+	margin: 5px auto auto 3%;
+	width:40%;
+	height: 450px;
+	
+}
+
+
+
+
+/* applying properties to cover of the book */
+.bookcover{padding:10px 20px 10px 15px;
+	float:left;
+	padding: 5px;
+
+
+}
+
+/* centering the reference class */
+.reference{text-align: center;
+		margin-top: 3em;
+	
+}
+
+/* applying properties for the id  */
+#authorlisting{
+	width:100%;
+}
+
+
+
+/* when the screen is less than 748px use this */
+@media only screen and (max-width:748px){
+
+	/* forr all header id (for mobile devices */
+	#header{ 
+		background-color:#252525d5;
+		clear:both;
+		width:100%;
+		min-height: 500px;
+		
+		
+	}
+
+	/* for the navigation on mobile devices */
+	#mainmenu li{
+		width:100%;	
+	}
+
+	/* for the author image on mobile device */
+	.authorprofile{width:100%}
+	/* logo behaviour on the mobile devices  */
+	#logo{ width:30%;
+	}
+	/* properties for author image on the mobile devices */
+	#authorpic{ width: 100%;
+			}
+
+	/* specifying the class authordescription on mobile devices */
+	.autordescription{
+		margin-top: 1em;
+		width:90%;}
+	
+	/* specifying for moble devices */
+	.bookdetails{ width:100%;}
+
+	/*specifying for mobile devices  */
+	.bookcover{ width: 100%;}
+
+	/* specifying footer behaviour on about page and welcome page */
+	#about footer, #welcomepage footer{ position:relative;}
+
+	
+
+}

@@ -1,0 +1,61 @@
+project.txt
+Game Store
+
+
+Functionality planned for all users (public);
+1. Users can browse different games listed in the website using genres.
+2. Users can select the games based on their preference and add it on the shopping kit for purchase. 
+3. They can rate the game on a different page. 
+
+Functionality planned for registered users only;
+1. Registered users can add, delete and update the games listed on the website.
+2. All the actions made by the registered users will be verified with the appropriate validation.
+
+Functionality planned for simple search;
+1. textbox will be provided on the top of the website to search the games using the keys provided by user.
+2. After clicking the Browse button the search will be done with the matching keys provided by the user.
+3. The search result with the matched games will be listed on the webpage.
+
+Functionality planned for complex search;
+1. Advanced search option will be provided using hyperlink which will open a new page for complex search.
+2. User can search for games using developers, genres and file size. 
+3. After clicking the Search, the matching result from the database will be listed on the webpage 
+
+Changes until Assignment 2 Subission 
+1. I have created several php files e.g. popular_games.php, trending games.php, about.php, login.php, register.php and about.php in php directory according to the functionality as in the filename. 
+2. I also created libcommon.php and install.php in config directory. 
+3. The functionality of install.php is used for creating the tables and adding the values into the tables.
+4. The functionality of libcommon.php for connecting database to trending_games.php and popular_games.php.
+5. I have put total 12 games with image and little description from the database to the trending_games.php.
+6. I have also added 4 games in popular_game.php which also have images and description from database.
+7. The about.php contains information regarding the gamestore. 
+8. Login.php and register.php has a form with some text input but is not functioning till now.
+9. I have put images used in the webpages in img directory. 
+
+Changes until Assignment 3 Subission 
+1. All the functions are kept in libcommin.php file and are called in individual files.
+2. I have added two search functionality, simple search and advanced search, simple search will search for the letter or word and all the matching result will be displayed and on advanced search we can use word, letter as well as price range.
+3. page-not-found error(404) page is created using htaccess.
+4. The cart functionality is added using cart.php where we can view and remove the games that are added from every other pages.
+5. The login function is created and validated. After successful login there will be new button on navigation panel to add games.
+6. We can also edit the details of the game after succesful login and this functionality is provided by edit.php page. 
+6. The logut button is also added and after clicking it, normal user mode will be displayed and we can only add and remove the games to cart after logout.
+7. The register.php is created for the registration of new user, It is validated and secured against the sql injection attack by using htmlspecialchars. 
+8. Asynchronous update (ajax) is used to add games to cart.php.
+10. Proper Validation is done on every input field.
+11. All the images used are acknowledged.
+
+
+References for Game's Thumbnail: 
+
+	a.jpg =====>	GTA: https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn2.unrealengine.com%2FDiesel%252Fproductv2%252Fgrand-theft-auto-v%252Fhome%252FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg%3Fh%3D1080%26resize%3D1%26w%3D1920&imgrefurl=https%3A%2F%2Fwww.epicgames.com%2Fstore%2Fen-US%2Fproduct%2Fgrand-theft-auto-v%2Fhome&tbnid=DKAPE9yxgDJeMM&vet=12ahUKEwiI4qfJ9MXsAhULnUsFHWQzCkgQMygAegUIARDWAQ..i&docid=UowIzHadeLpVZM&w=1920&h=1080&q=GTA&ved=2ahUKEwiI4qfJ9MXsAhULnUsFHWQzCkgQMygAegUIARDWAQ				Gloomhaven: https://www.google.com/url?sa=i&url=https%3A%2F%2Fboardgamegeek.com%2Fboardgame%2F174430%2Fgloomhaven&psig=AOvVaw2uTW8C-35J_YhOuZ_6mnKQ&ust=1603375430195000&source=images&cd=vfe&ved=2ahUKEwi9_PeI7cXsAhUt_jgGHRZxD3QQjRx6BAgAEAc
+	c.jpg =====>	Disco Elysium: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gog.com%2Fgame%2Fdisco_elysium&psig=AOvVaw0EzFmk4rxsfAbLWIGon4eD&ust=1603375534046000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjJwr3txewCFQAAAAAdAAAAABAD
+	g.jpg =====>	Destroy All Humans: https://www.google.com/imgres?imgurl=https%3A%2F%2Fsteamcdn-a.akamaihd.net%2Fsteam%2Fapps%2F803330%2Fheader.jpg%3Ft%3D1602775181&imgrefurl=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F803330%2FDestroy_All_Humans%2F&tbnid=2FjApQFhV_lPZM&vet=12ahUKEwiWmp7R7cXsAhWxm0sFHbE6D4UQMygAegUIARDTAQ..i&docid=Gcl1_Rj2dkQDhM&w=460&h=215&q=destroy%20all%20humans&ved=2ahUKEwiWmp7R7cXsAhWxm0sFHbE6D4UQMygAegUIARDTAQ
+	d.jpg =====>	FOrtnite: https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn2.unrealengine.com%2Ffortnite-battle-royale-1920x1080-864336699.jpg&imgrefurl=https%3A%2F%2Fwww.epicgames.com%2Ffortnite%2Fen-US%2Fnews%2Fwhat-is-fortnite-beginners-guide&tbnid=TOuiMlOCnV8hBM&vet=12ahUKEwir8b2c8cXsAhWHg0sFHU9CCIQQMygEegUIARDWAQ..i&docid=5bZDMX_RTe-VuM&w=1920&h=1080&q=fortnite&ved=2ahUKEwir8b2c8cXsAhWHg0sFHU9CCIQQMygEegUIARDWAQ
+	h.jpg =====>	PES: https://www.google.com/url?sa=i&url=https%3A%2F%2Fhappygamer.com%2Fkonami-announces-release-date-for-efootball-pes-2020-mobile-version-gameplay-features-and-changes-23714%2F&psig=AOvVaw3zisp3dxKAwGl5V7EbX8e4&ust=1603376956675000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiX-eXyxewCFQAAAAAdAAAAABAD
+	i.jpg =====>	Stormland: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vrone.co.uk%2Fvr-games%2Freviews%2Fstormland-vr-review&psig=AOvVaw1gdIh2wt3zFyoz9ScciSEp&ust=1603376998416000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJja8IXzxewCFQAAAAAdAAAAABAD
+	j.jpg =====>	Minecraft: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.essentiallysports.com%2Fwatch-a-sneak-peak-into-the-thrilling-new-minecraft-dungeons-esports-news%2F&psig=AOvVaw1wa_9V1OZzcwxTB81kqMlK&ust=1603377067803000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDUjpvzxewCFQAAAAAdAAAAABAD
+	e.jpg =====>	World Above: https://www.google.com/url?sa=i&url=https%3A%2F%2Fgame2n.com%2Fgames%2Fworld-above-vikings-dragons-mod-apk.html&psig=AOvVaw07dxtPHJqpBYd-19mFfty5&ust=1603377113510000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCT5rnzxewCFQAAAAAdAAAAABAK
+	k.jpg =====>	Call of Duty: Modern Warfare: https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.callofduty.com%2Fcontent%2Fdam%2Fatvi%2Fcallofduty%2Fcod-touchui%2Fkronos%2Fcommon%2Fsocial-share%2Fsocial-share-image.jpg&imgrefurl=https%3A%2F%2Fwww.callofduty.com%2Fmodernwarfare&tbnid=2_MapcjByKDANM&vet=12ahUKEwjd9O3R88XsAhXQmUsFHSr_C_gQMygAegUIARCqAQ..i&docid=ta8n7-tIEudq7M&w=1920&h=1080&q=call%20of%20duty%20modern&ved=2ahUKEwjd9O3R88XsAhXQmUsFHSr_C_gQMygAegUIARCqAQ
+	f.jpg =====>	Bubble Function: https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.mangahigh.com%2Facb91cf1f7411598f82a9b4d4f6954bf%2Fassets%2Fimg%2Fgames%2Fbubblefunction.png&imgrefurl=https%3A%2F%2Fwww.mangahigh.com%2Fen%2Fgames%2Fbubblefunction&tbnid=K9ZbH4QljRh49M&vet=12ahUKEwjt1vzg88XsAhUKB3IKHVT0A8cQMygFegUIARCkAQ..i&docid=FxcNW-jFgPpzcM&w=640&h=360&q=Bubble%20Function&ved=2ahUKEwjt1vzg88XsAhUKB3IKHVT0A8cQMygFegUIARCkAQ
+	l.jpg =====>	Stardew Valley: https://www.google.com/imgres?imgurl=https%3A%2F%2Fhb.imgix.net%2F35e1689e7634e948baab56601cd8879f5b06dd7b.jpeg%3Fauto%3Dcompress%2Cformat%26fit%3Dcrop%26h%3D353%26w%3D616%26s%3D8a74e6a49b712d241d1dfb99415c4e0a&imgrefurl=https%3A%2F%2Fwww.humblebundle.com%2Fstore%2Fstardew-valley&tbnid=SJnL7ucgNt9TiM&vet=12ahUKEwiY_8Hx88XsAhWZiEsFHT4xBgwQMygGegUIARDbAQ..i&docid=S-WVYO0hLEke7M&w=616&h=353&q=Stardew%20Valley&ved=2ahUKEwiY_8Hx88XsAhWZiEsFHT4xBgwQMygGegUIARDbAQ

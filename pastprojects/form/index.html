@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head profile="http://www.w3.org/2005/10/profile">
+<!-- For page responsiveness -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Specifying character set of website -->
+	<meta charset='utf-8'>
+	<!-- Css file for styling -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Javascript file  -->
+<script src="main.js"> </script>
+<title>Global Adventures </title>
+</head>
+<!-- start of the html body -->
+<body>
+<header id="pagetopbar"> 
+	<img src="logo.svg" id="logo" alt="Company logo" title="Global Adventures">
+	<!-- COmpany Name -->
+<h1 id="companyname">Global Adventures </h1>
+</header>
+<!-- form method for data reflecion -->
+<form id ="registrationmain" method="POST" action="https://tau.usq.edu.au/courses/CSC2406/reflect.php">
+<h2 id="mainformheading"> Fill this form to get our package details </h2>
+<!-- progressbar on the top of the page -->
+<div class="progressbar"> 
+	<span class="progress">First Section</span>
+	<span class="progress">Second Section</span>
+	<span class="progress">Third Section</span>
+</div>
+<!-- form start up  -->
+<div class="registration">
+<fieldset>
+	<legend>Personal information</legend>
+	<!-- Help option -->
+<div class="helppopup">Need help?</div>
+<div class="helppopuptext"> 
+<span id="popupheading"><h4>Follow these rules to fill up the form</h4> <br> <h5> Click Anywhere to close this help box</h5></span>
+	<br/>
+	<p>Name field: Maximum 20 characters allowed</p>
+	<p>Surname field: Maximum 20 characters allowed</p>
+	<p>Postal Address field: Text and numbers - Maximum 40 characters allowed</p>
+	<p>Email field: Only correct email addresses allowed - Maximum 40 characters</p>
+	<p>Phone Number field: Maximum 15 numbers with + sign is allowed </p>
+	<p>Occupation: Character limit: 30 characters</p>
+	<p>Special Needs? : Maxumum 30 characters </p>
+<span id="popupheading2"><h5>Click Anywhere to close this help box</h5></span>
+</div>
+<!-- Personal details container -->
+<div class="sectioncontainer">
+Name<input type="text" name="firstname" maxlength="20" placeholder="Enter your first name">
+Surname<input type="text" name="lastname" maxlength="20" placeholder="Enter your last name">
+Postal Address<input type="text" name="postaladdress" maxlength="40" placeholder="Enter your postal address">
+Email<input type="email" name="email" maxlength="40" placeholder="email@xyz.com" required>
+Phone Number<input type="tel" pattern="[0-9]+" name="phonenumber" maxlength="15" placeholder="Enter your Phone/Mobile number" required>
+Birth Date<input type="date"  name="birthdate" placeholder="Enter your birthdate">
+Occupation<input type="text" name="occupation" maxlength="30" placeholder="Your occupation">
+Gender<select name="gender">
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+		<option value="other">Other</option>
+	</select>
+Dietary Requirements<select name= "dietary">
+        <option value="Vegeterian">Vegeterian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Halal">Halal</option>
+        <option value="Kosher">Kosher</option>
+        <option value="Allergies">Allergies</option>
+    </select>
+Special Needs?<input type="text" name="specialneed" maxlength="100" placeholder="Please specify if you have any and if you do not have then type NO">
+    <!-- Partner info radio -->
+<div id="partnerinfo">Travelling with a partner?
+	<input type="radio" name="havepartner" value="yes">Yes
+	<input type="radio" name="havepartner" value="no" checked disabled>No
+</div>
+<!-- children info radio -->
+<div id="childreninfo">Travelling with children?
+	<input type="radio" name="withchildren" value="yes">Yes
+	<input type="radio" name="withchildren" value="no" checked disabled>No
+</div>
+<!-- friend info radio -->
+<div id="friendinfo">Travelling with Friends?
+		<input type="radio" name="withfriends" value="yes">Yes
+		<input type="radio" name="withfriends" value="no" checked disabled>No
+	</div>
+
+<p class="showerror"> error is here</p>
+</div>
+</fieldset>
+</div>
+<!-- second form startup -->
+<div class="registration">
+<fieldset>
+<legend>Select budget range, preferred dates and acvtiveness</legend>
+<div class="helppopup">Need help?</div>
+<div class="helppopuptext"> 
+	<!-- help box  -->
+<span id="popupheading"><h4>Please fill up this form as below to forward to next step</h4></span>
+	<br/>
+	From : Choose Starting date of your trip <br>
+	To: Choose your returning date from trip <br>
+	Select the applicable budget range<br>
+	Choose your activeness<br>
+	
+<span id="popupheading2"><h5>Click anywhere to close this help box </h5></span>
+</div>
+<div class="sectioncontainer">
+
+<p>Preferred travel dates</p>
+From:<input type="date" name="traveldatefrom"> 
+To: <input type="date" name="traveldateto">
+Budget ranges
+<div id="budgetrangebox">
+
+		<select name="budget">
+			<option value="0 - $500">Less than 500 $</option>
+				<option value="$500 - $2000">$500 - $2000</option>
+				<option value="$2000 - $5000">$2000 - $5000</option>
+			</select>
+</div>
+
+<h3> How active?</h3>
+<input type="radio" name="travelalltime" value="travelling all the time">Travelling all the time.
+<input type="radio" name="travelalltime" value="Need rest days">Need rest days.
+<input type="radio" name="travelalltime" value="Enjoy strenuous activities">Enjoy strenuous activities
+<input type="radio" name="travelalltime" value="Sedentry" >Sedentary
+
+
+<p class="showerror"> </p>
+</div>
+</fieldset>
+</div>
+
+<div class="registration">
+<fieldset>
+<legend>Select preferred mode of travel, enironment and destination</legend>
+<div class="helppopup">Need help?</div>
+<div class="helppopuptext"> 
+<span id="popupheading"><h4>Please follow these rules</h4><h5>Click anywhere to close this box	</h5></span>
+	<br/>
+	Select your tyoe of accomodation from the list<br>
+	Select your preferred mode of travel <br>
+	Select your preferred Environments from the list<br>
+	Select your Preferred Destination from the list<br>
+<span id="popupheading2"><h5>Click anywhere to close this help box</h5></span>
+</div>
+<div class="sectioncontainer">
+<div id="preferredaccom">
+<h3> Preferred Accomodation</h3>
+<select id="preferredaccomodation" name="preferredaccomodation">
+		<option value="motel">Motel</option>
+		<option value="hotel">Hotel</option>
+		<option value="bed&breakfast">Bed & Breakfast</option>
+		<option value="airbnb">Airbnb</option>
+		<option value="saccommodation">Student Accommodation</option>
+		<option value="baccommodation">Backpacker's Accommodation</option>
+		<option value="camping">Camping</option>
+		<option value="other">Other</option>
+</select>
+</div>
+</figure>
+
+<h3> Preferred Modes of Travel</h3>
+<p>You can select more than one</p>
+<div id="travelmodecontainer" class="flexcolumn">
+<div>
+<input type="checkbox" name="preftravelmode" value="air">Air
+<input type="checkbox" name="preftravelmode" value="water">Water
+<input type="checkbox" name="preftravelmode" value="train">Train
+<input type="checkbox" name="preftravelmode" value="bus">Bus
+<input type="checkbox" name="preftravelmode" value="bicycle">Bicycle
+</div>
+<div>
+<input type="checkbox" name="preftravelmode" value="donkey/mule">Donkey/Mule
+<input type="checkbox" name="preftravelmode" value="camel">Camel
+<input type="checkbox" name="preftravelmode" value="llama">Llama
+<input type="checkbox" name="preftravelmode" value="walking">Walking
+<input type="checkbox" name="preftravelmode" value="other">Other
+</div>
+</div>
+<h3> Preferred Travel Environments</h3>
+<p> You can select more than one</p>
+<select name="prefenvironments" size="5" multiple="multiple">
+		<option value="cities">Cities</option>
+		<option value="country">Country</option>
+		<option value="natural">Natural</option>
+		<option value="mountains">Mountains</option>
+		<option value="deserts">Deserts</option>
+		<option value="rainforests">Rain Forests</option>
+		<option value="sea">Sea</option>
+		<option value="coastal">Coastal</option>
+		<option value="inland">Inland</option>
+</select>
+
+<h3> Preferred destinations</h3>
+<p> You can select more than one</p>
+<select name="prefdestinations" size="10" multiple="multiple">
+<optgroup label="Africa">
+	<option value="eastern">Eastern</option>
+	<option value="middle">Middle</option>
+	<option value="northern">Northern</option>
+	<option value="western">Western</option>
+	<option value="southern">Southern</option>
+</optgroup>
+<optgroup label="Asia">
+	<option value="india">India</option>
+	<option value="malaysia">Malaysia</option>
+	<option value="japan">Japan</option>
+	<option value="northkorea">North Korea</option>
+	<option value="turkmenistan">Turkmenistan</option>
+	<option value="nepal">Nepal</option>
+</optgroup>
+<optgroup label="Central America">
+	<option value="mexico">Mexico</option>
+	<option value="honduras">Honduras</option>
+	<option value="panama">Panama</option>
+</optgroup>
+<optgroup label="Europe">
+	<option value="russia">Russia</option>
+	<option value="iceland">Iceland</option>
+	<option value="belarus">Belarus</option>
+	<option value="norway">Norway</option>
+	<option value="switzerland">Switzerland</option>
+	<option value="unitedkingdom">United Kingdom</option>
+</optgroup>
+<optgroup label="European Union">
+	<option value="belgium">Belgium</option>
+	<option value="france">France</option>
+	<option value="spain">Spain</option>
+	<option value="sweden">Sweden</option>
+	<option value="ireland">Ireland</option>
+</optgroup>
+<optgroup label="Middle East">
+	<option value="bahrain">Bahrain</option>
+	<option value="iraq">Iraq</option>
+	<option value="syria">Syria</option>
+	<option value="yemen">Yemen</option>
+</optgroup>
+<optgroup label="North America">
+	<option value="canada">Canada</option>
+	<option value="greenland">Greenland</option>
+	<option value="usa">U.S.A</option>
+</optgroup>
+<optgroup label="Oceania">
+	<option value="papuanewguinea">Papua New Guinea</option>
+	<option value="samoa">Samoa</option>
+	<option value="newzealand">New Zealand</option>
+	<option value="micronesia">Micronesia</option>
+	<option value="australia">Australia</option>
+</optgroup>
+<optgroup label="South America">
+	<option value="bolivia">Bolivia</option>
+	<option value="peru">Peru</option>
+	<option value="colombia">Colombia</option>
+	<option value="venezeula">Venezeula</option>
+</optgroup>
+<optgroup label="The Caribbean">
+	<option value="cuba">Cuba</option>
+	<option value="barbados">Barbados</option>
+	<option value="jamaica">Jamaica</option>
+	<option value="curaçao">Curaçao</option>
+</optgroup>
+</select>
+<p class="showerror"> </p>
+</div>
+</fieldset>
+</div>
+
+<div id="buttons">
+<button type="button" id="previous">Previous</button>
+<button type="button" id="next">Next</button>
+</div>
+
+</form>
+</body>
+</html>
+

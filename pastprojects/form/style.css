@@ -1,0 +1,229 @@
+/* Formatting for all pages */
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 100%;
+    /* margin: 0; */
+ }
+/* setting body width */
+body{
+	width:100%;
+}
+/* adjusting company name on the top of the page */
+#pagetopbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+/* styling logo */
+#logo {
+	width: 8vw;
+	padding-top: 1%;
+}
+/* company name properties */
+#companyname {
+	padding-top: 1%;
+	color: rgb(24, 194, 46);
+	font-size: 4vw;
+}
+
+#mainformheading {
+padding-bottom: 1%;
+text-align: center;
+
+}
+
+/* decorating registration form */
+.registration {
+	display: none;
+	background-color: rgba(234,235,237,0.9);
+	padding: 1%;
+}
+/* styling the form on the first section */
+.sectioncontainer {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	line-height: 4vh;
+	font-size: 1.2vw;
+}
+/* progressbar width */
+.progressbar{
+	width: 100%;
+}
+/* formatting text box */
+input {
+	margin: 1%;
+	padding: 1%;
+	border: 0.05rem solid black;
+}
+/* formatting selction panel */
+select{
+	width:30%;
+	padding: 1%;
+	margin: 1%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, 
+input[type="tel"]:focus, input[type="date"]:focus {
+	border: solid rgb(24, 194, 46);
+	font-weight: bold;
+	font-size: larger;
+}
+
+input[type=radio]{
+margin: 0px;
+padding: 0px;	
+border: 0px;
+} 
+
+input[type=number]{
+	width: 5vw;
+	padding: 0.5%;
+	margin: 0%;
+} 
+
+input.invalid {
+	border: 0.10rem solid red;
+}
+
+#notifyerror {
+	color: red;
+}
+
+.progress {
+	display: inline-block;
+	padding: 0.5%;
+	margin-bottom: 0.5%;
+	width: 32.8%;
+	background-color: rgb(24, 194, 46);
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.progress.active {
+	background-color: rgb(24, 194, 46);
+}
+
+.progress.finish {
+	background-color: rgb(111, 52, 151);
+}
+
+span.sectionheading {
+	display: block;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+#buttons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: rgba(234,235,237,0.9);
+	margin-top: 0.5%;
+}
+
+#partnerinfo2, #childreninfo2, #childreninfo3, #friendinfo2, #friendinfo3, #friendinfo4,
+#needrestdays, #needrestdays2, #preferredaccom, 
+#preferredaccom2, .flexcolumn {
+	display: flex;
+	flex-direction: column;
+	line-height: 4vh;
+}
+
+.helppopup {
+	width: 13%;
+	padding: 0.5%;
+	float: right;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+	background-color: rgb(24, 194, 46);
+	color: white;
+	z-index: 1;
+	border: 0.2rem solid white;
+	
+}
+
+ .helppopuptext {
+ 	margin-top: 1%;
+ 	display: none;
+ 	cursor: pointer;
+	user-select: none;
+	background-color: rgba(184,184,184,0.9);
+	z-index: 1;
+	position: absolute;
+	border: 0.2rem solid white;
+	width: 95%;
+
+ }
+
+.showerror {
+	display: none;
+}
+
+.display {
+	display: block;
+
+}
+
+
+
+#travelmodecontainer > div {
+	display: flex;
+ 	align-content: center;
+}
+
+figure:hover {
+	border: thin solid rgb(24, 194, 46);
+	padding: 1%;
+}
+
+#popupheading {
+display: block;
+color: white;
+background-color: rgb(24, 194, 46);
+text-align: center;
+cursor: pointer;
+user-select: none;
+padding: 1%;
+}
+
+#popupheading2 {
+display: block;
+color: white;
+background-color: rgb(24, 194, 46);
+text-align: center;
+cursor: pointer;
+user-select: none;
+}
+
+
+.helppopuptext p {
+	text-align: center;
+	line-height: 2rem;
+	padding: 1%;
+	font-weight: bold;
+}
+
+#partnerinfo, #childreninfo, #friendinfo #budgetrangebox {
+	width: 100%;
+
+}
+
+/* Style for the devices with lower resolution */
+@media screen and (max-width: 1024px) {
+}
+
+
+
+/* Special specifications for narrow screen (mobile devices) */
+
+/* When the screen is less than 600 pixels wide use this properities*/
+@media screen and (max-width: 600px) {
+
+}

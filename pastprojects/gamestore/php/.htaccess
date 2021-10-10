@@ -1,0 +1,8 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+
+AddType application/x-httpd-php .html
+
+RewriteEngine on
+ErrorDocument 404 http://localhost/project/php/404.php
+</IfModule>
