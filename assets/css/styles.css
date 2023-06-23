@@ -89,7 +89,7 @@
     position: absolute;
     left: -5%;
     bottom: 0;
-    z-index: -1;
+    /* z-index: -1; */
     height: 6px;
     background: #12db8a;
     width: 110%;
