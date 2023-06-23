@@ -34,6 +34,10 @@
     max-width: 1920px;
 }
 
+.cetretext{
+    text-align: center;
+}
+
 .header-area {
     position: fixed;
     left: 0;
@@ -41,7 +45,6 @@
     z-index: 998;
     width: 100%;
     padding: 30px 0px;
-    background-color: #000;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -57,6 +60,7 @@
 
 .main-menu {
     text-align: center;
+    background-color: #000;
 }
 
 .main-menu nav>ul>li {
